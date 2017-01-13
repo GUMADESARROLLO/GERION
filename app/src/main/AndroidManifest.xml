@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.guma.desarrollo.caronte">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.AUTEHTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="android.app.searchable"
+            android:resource="@xml/searchable" />
+
+        <activity
+            android:name=".Activitys.LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activitys.TableroActivity"
+            android:label="@string/title_activity_tablero"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activitys.DetalleTableroActivity" />
+        <activity
+            android:name=".Activitys.ClientesActivity"
+            android:theme="@style/AppTheme.NoActionBar_2" />
+        <activity android:name=".Activitys.TableroClienteActivity" />
+
+        <meta-data
+            android:name="android.app.searchable"
+            android:resource="@xml/searchable" />
+
+        <activity
+            android:name=".Activitys.AgendaActivity"
+            android:label="@string/title_activity_agenda"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activitys.AgendaCompletaActivity" />
+        <activity
+            android:name=".Activitys.CarritoPedidoActivity"
+            android:label="@string/title_activity_carrito_pedido"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activitys.LIstaProductoActivity"
+            android:label="@string/title_activity_lista_producto"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activitys.ResumenActivity" />
+        <activity
+            android:name=".Activitys.locationActivity"
+            android:label="@string/title_activity_location"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activitys.MenuActionesActivity" />
+        <activity
+            android:name=".Activitys.FrmCobroActivity"
+            android:label="@string/title_activity_frm_cobro"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activitys.ReporteVistaActivity"
+            android:label="@string/title_activity_reporte_vista"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RptVisitaActivity"
+            android:label="@string/title_activity_rpt_visita"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Herramientas">
+        <menu>
+            <item
+                android:id="@+id/nav_Clientes"
+                android:icon="@drawable/ic_face_black_24dp"
+                android:title="@string/act_Clientes" />
+            <item
+                android:id="@+id/nav_plan"
+                android:icon="@drawable/ic_event_black_24dp"
+                android:title="@string/act_plan_trabajo" />
+            <item
+                android:id="@+id/nav_salir"
+                android:icon="@drawable/ic_power_settings_new_black_24dp"
+                android:title="Salir" />
+        </menu>
+    </item>
+
+</menu>
+
